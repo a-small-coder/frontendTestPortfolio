@@ -1,0 +1,61 @@
+/* adaptive image */
+._image-container{
+    position: relative;
+}
+._img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+        object-fit: cover;
+}
+
+@media (max-width: 992px){
+    ._container{
+        width: 100%;
+        padding: 0 25px;
+        padding-top: 30px;
+    }
+}
+
+
+@media (max-width: 768px){
+    .header__menu {
+        border-bottom: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__menu > .menu {
+        display: none;
+    }
+    .mobile-menu{
+        display: block;
+    }
+    .header__menu_logo{
+        display: block;
+    }
+    .about-me-header__logo{
+        display: none;
+    }
+
+    .heading-container{
+        padding: 10px 0;
+    }
+    
+
+    /* classes for micro-elements */
+    .logo-text{
+        line-height: 40px;
+    }
+}
+
+@media (max-width: 458px){
+    .header__image_horizontal{
+        display: none;
+    }
+    .header__image_vertical{
+        display: block;
+    }
+}
